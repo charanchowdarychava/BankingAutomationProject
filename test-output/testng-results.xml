@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="6" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-07T12:31:24 IST" name="BankingAutomationSuite" finished-at="2025-09-07T12:31:56 IST" duration-ms="31699">
+    <groups>
+      <group name="emi">
+        <method signature="EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" name="validateEmi" class="com.capstone.bank.tests.EmiTests"/>
+      </group> <!-- emi -->
+      <group name="loan">
+        <method signature="LoanTests.homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" name="homeLoan_request_shouldReturnResult" class="com.capstone.bank.tests.LoanTests"/>
+        <method signature="LoanTests.personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" name="personalLoan_request_shouldReturnResult" class="com.capstone.bank.tests.LoanTests"/>
+      </group> <!-- loan -->
+      <group name="transfer">
+        <method signature="FundTransferTests.transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@6e2aa843]" name="transferFunds_shouldShowResultPage" class="com.capstone.bank.tests.FundTransferTests"/>
+      </group> <!-- transfer -->
+      <group name="history">
+        <method signature="TransactionHistoryTests.transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@3b35a229]" name="transactions_shouldAppearAfterTransfer" class="com.capstone.bank.tests.TransactionHistoryTests"/>
+      </group> <!-- history -->
+      <group name="login">
+        <method signature="LoginTests.invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" name="invalidLogin" class="com.capstone.bank.tests.LoginTests"/>
+        <method signature="LoginTests.validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" name="validLogin" class="com.capstone.bank.tests.LoginTests"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2025-09-07T12:31:24 IST" name="Loan" finished-at="2025-09-07T12:31:45 IST" duration-ms="21031">
+      <class name="com.capstone.bank.tests.LoanTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:24 IST" name="setUp" finished-at="2025-09-07T12:31:32 IST" duration-ms="7650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:32 IST" name="homeLoan_request_shouldReturnResult" finished-at="2025-09-07T12:31:35 IST" duration-ms="3360" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[type='submit'][value='Apply Now']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25a9861357adc193f36a4a8e56a56a57, findElement {value=input[type='submit'][value='Apply Now'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60964/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25a9861357adc193f36a4a8e56a56a57]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[type='submit'][value='Apply Now']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25a9861357adc193f36a4a8e56a56a57, findElement {value=input[type='submit'][value='Apply Now'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60964/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25a9861357adc193f36a4a8e56a56a57
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.capstone.bank.pages.LoanPage.requestLoan(LoanPage.java:25)
+at com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult(LoanTests.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan_request_shouldReturnResult -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:35 IST" name="tearDown" finished-at="2025-09-07T12:31:36 IST" duration-ms="491" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homeLoan_request_shouldReturnResult status=FAILURE method=LoanTests.homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:36 IST" name="setUp" finished-at="2025-09-07T12:31:40 IST" duration-ms="4640" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:40 IST" name="personalLoan_request_shouldReturnResult" finished-at="2025-09-07T12:31:45 IST" duration-ms="4236" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"input[type='submit'][value='Apply Now']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d155ce7b35fad71417786df6aeed3b, findElement {value=input[type='submit'][value='Apply Now'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61055/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d155ce7b35fad71417786df6aeed3b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"input[type='submit'][value='Apply Now']"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d155ce7b35fad71417786df6aeed3b, findElement {value=input[type='submit'][value='Apply Now'], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61055/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d155ce7b35fad71417786df6aeed3b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.capstone.bank.pages.LoanPage.requestLoan(LoanPage.java:25)
+at com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult(LoanTests.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoan_request_shouldReturnResult -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd]" started-at="2025-09-07T12:31:45 IST" name="tearDown" finished-at="2025-09-07T12:31:45 IST" duration-ms="553" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=personalLoan_request_shouldReturnResult status=FAILURE method=LoanTests.personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@169bb4dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.LoanTests -->
+    </test> <!-- Loan -->
+    <test started-at="2025-09-07T12:31:24 IST" name="Login" finished-at="2025-09-07T12:31:45 IST" duration-ms="21294">
+      <class name="com.capstone.bank.tests.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:24 IST" name="setUp" finished-at="2025-09-07T12:31:35 IST" duration-ms="10858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoginTests.invalidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:35 IST" name="invalidLogin" finished-at="2025-09-07T12:31:37 IST" duration-ms="2152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:37 IST" name="tearDown" finished-at="2025-09-07T12:31:38 IST" duration-ms="772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=SUCCESS method=LoginTests.invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:38 IST" name="setUp" finished-at="2025-09-07T12:31:43 IST" duration-ms="4818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoginTests.validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:43 IST" name="validLogin" finished-at="2025-09-07T12:31:45 IST" duration-ms="2148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a]" started-at="2025-09-07T12:31:45 IST" name="tearDown" finished-at="2025-09-07T12:31:45 IST" duration-ms="459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTests.validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@359df09a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.LoginTests -->
+    </test> <!-- Login -->
+    <test started-at="2025-09-07T12:31:24 IST" name="EMI" finished-at="2025-09-07T12:31:48 IST" duration-ms="24216">
+      <class name="com.capstone.bank.tests.EmiTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:24 IST" name="setUp" finished-at="2025-09-07T12:31:31 IST" duration-ms="7197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:31 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T12:31:31 IST" duration-ms="31" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:31 IST" name="tearDown" finished-at="2025-09-07T12:31:32 IST" duration-ms="973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:32 IST" name="setUp" finished-at="2025-09-07T12:31:36 IST" duration-ms="3986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:36 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T12:31:36 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[240]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:36 IST" name="tearDown" finished-at="2025-09-07T12:31:38 IST" duration-ms="1498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:38 IST" name="setUp" finished-at="2025-09-07T12:31:42 IST" duration-ms="4409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:42 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T12:31:42 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:42 IST" name="tearDown" finished-at="2025-09-07T12:31:43 IST" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:43 IST" name="setUp" finished-at="2025-09-07T12:31:47 IST" duration-ms="4124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:47 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T12:31:47 IST" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368]" started-at="2025-09-07T12:31:47 IST" name="tearDown" finished-at="2025-09-07T12:31:48 IST" duration-ms="1370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@1f9f6368] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.EmiTests -->
+    </test> <!-- EMI -->
+    <test started-at="2025-09-07T12:31:45 IST" name="History" finished-at="2025-09-07T12:31:54 IST" duration-ms="8845">
+      <class name="com.capstone.bank.tests.TransactionHistoryTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@3b35a229]" started-at="2025-09-07T12:31:45 IST" name="setUp" finished-at="2025-09-07T12:31:52 IST" duration-ms="6776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTransfer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@3b35a229]" started-at="2025-09-07T12:31:52 IST" name="transactions_shouldAppearAfterTransfer" finished-at="2025-09-07T12:31:54 IST" duration-ms="1654" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#accountTable tbody tr td a"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16322af2deb24d8a4ae2d10866704629, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61176/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16322af2deb24d8a4ae2d10866704629]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#accountTable tbody tr td a"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16322af2deb24d8a4ae2d10866704629, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61176/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16322af2deb24d8a4ae2d10866704629
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTransfer(TransactionHistoryTests.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactions_shouldAppearAfterTransfer -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@3b35a229]" started-at="2025-09-07T12:31:54 IST" name="tearDown" finished-at="2025-09-07T12:31:54 IST" duration-ms="396" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transactions_shouldAppearAfterTransfer status=FAILURE method=TransactionHistoryTests.transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@3b35a229] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.TransactionHistoryTests -->
+    </test> <!-- History -->
+    <test started-at="2025-09-07T12:31:45 IST" name="Transfer" finished-at="2025-09-07T12:31:56 IST" duration-ms="10586">
+      <class name="com.capstone.bank.tests.FundTransferTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.FundTransferTests@6e2aa843]" started-at="2025-09-07T12:31:45 IST" name="setUp" finished-at="2025-09-07T12:31:54 IST" duration-ms="8462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@6e2aa843]" started-at="2025-09-07T12:31:54 IST" name="transferFunds_shouldShowResultPage" finished-at="2025-09-07T12:31:55 IST" duration-ms="1770" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#accountTable tbody tr td a"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b023ef2b9f561b0d6b4c51719d61719, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61175/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b023ef2b9f561b0d6b4c51719d61719]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#accountTable tbody tr td a"}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b023ef2b9f561b0d6b4c51719d61719, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61175/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b023ef2b9f561b0d6b4c51719d61719
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage(FundTransferTests.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1570)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferFunds_shouldShowResultPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.FundTransferTests@6e2aa843]" started-at="2025-09-07T12:31:55 IST" name="tearDown" finished-at="2025-09-07T12:31:56 IST" duration-ms="346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transferFunds_shouldShowResultPage status=FAILURE method=FundTransferTests.transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@6e2aa843] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.FundTransferTests -->
+    </test> <!-- Transfer -->
+  </suite> <!-- BankingAutomationSuite -->
+</testng-results>

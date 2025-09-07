@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-07T21:33:20 IST" name="BankingAutomationSuite" finished-at="2025-09-07T21:34:13 IST" duration-ms="53591">
+    <groups>
+      <group name="emi">
+        <method signature="EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" name="validateEmi" class="com.capstone.bank.tests.EmiTests"/>
+      </group> <!-- emi -->
+      <group name="loan">
+        <method signature="LoanTests.homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" name="homeLoan_request_shouldReturnResult" class="com.capstone.bank.tests.LoanTests"/>
+        <method signature="LoanTests.personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" name="personalLoan_request_shouldReturnResult" class="com.capstone.bank.tests.LoanTests"/>
+      </group> <!-- loan -->
+      <group name="transfer">
+        <method signature="FundTransferTests.transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@790da477]" name="transferFunds_shouldShowResultPage" class="com.capstone.bank.tests.FundTransferTests"/>
+      </group> <!-- transfer -->
+      <group name="history">
+        <method signature="TransactionHistoryTests.transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@5e7cd6cc]" name="transactions_shouldAppearAfterTransfer" class="com.capstone.bank.tests.TransactionHistoryTests"/>
+      </group> <!-- history -->
+      <group name="login">
+        <method signature="LoginTests.invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" name="invalidLogin" class="com.capstone.bank.tests.LoginTests"/>
+        <method signature="LoginTests.validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" name="validLogin" class="com.capstone.bank.tests.LoginTests"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2025-09-07T21:33:20 IST" name="Login" finished-at="2025-09-07T21:33:49 IST" duration-ms="29830">
+      <class name="com.capstone.bank.tests.LoginTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:20 IST" name="setUp" finished-at="2025-09-07T21:33:34 IST" duration-ms="14645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoginTests.invalidLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:34 IST" name="invalidLogin" finished-at="2025-09-07T21:33:36 IST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:36 IST" name="tearDown" finished-at="2025-09-07T21:33:38 IST" duration-ms="1217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLogin status=SUCCESS method=LoginTests.invalidLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:38 IST" name="setUp" finished-at="2025-09-07T21:33:45 IST" duration-ms="7280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoginTests.validLogin()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:45 IST" name="validLogin" finished-at="2025-09-07T21:33:48 IST" duration-ms="3132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76]" started-at="2025-09-07T21:33:48 IST" name="tearDown" finished-at="2025-09-07T21:33:49 IST" duration-ms="1233" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validLogin status=SUCCESS method=LoginTests.validLogin()[pri:0, instance:com.capstone.bank.tests.LoginTests@4b013c76] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.LoginTests -->
+    </test> <!-- Login -->
+    <test started-at="2025-09-07T21:33:20 IST" name="EMI" finished-at="2025-09-07T21:34:00 IST" duration-ms="40057">
+      <class name="com.capstone.bank.tests.EmiTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:20 IST" name="setUp" finished-at="2025-09-07T21:33:35 IST" duration-ms="15019" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:35 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T21:33:35 IST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:35 IST" name="tearDown" finished-at="2025-09-07T21:33:37 IST" duration-ms="2346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:37 IST" name="setUp" finished-at="2025-09-07T21:33:44 IST" duration-ms="7269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:44 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T21:33:44 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[240]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:44 IST" name="tearDown" finished-at="2025-09-07T21:33:45 IST" duration-ms="776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:45 IST" name="setUp" finished-at="2025-09-07T21:33:52 IST" duration-ms="6504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:52 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T21:33:52 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[20000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[48]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:52 IST" name="tearDown" finished-at="2025-09-07T21:33:53 IST" duration-ms="1167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:53 IST" name="setUp" finished-at="2025-09-07T21:33:58 IST" duration-ms="5351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:58 IST" name="validateEmi" data-provider="emiData" finished-at="2025-09-07T21:33:58 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12000.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[13.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmi -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b]" started-at="2025-09-07T21:33:58 IST" name="tearDown" finished-at="2025-09-07T21:34:00 IST" duration-ms="1410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, instance:com.capstone.bank.tests.EmiTests@72c8e7b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.EmiTests -->
+    </test> <!-- EMI -->
+    <test started-at="2025-09-07T21:33:20 IST" name="Loan" finished-at="2025-09-07T21:34:00 IST" duration-ms="40423">
+      <class name="com.capstone.bank.tests.LoanTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:20 IST" name="setUp" finished-at="2025-09-07T21:33:35 IST" duration-ms="15517" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:35 IST" name="homeLoan_request_shouldReturnResult" finished-at="2025-09-07T21:33:44 IST" duration-ms="8533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLoan_request_shouldReturnResult -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:44 IST" name="tearDown" finished-at="2025-09-07T21:33:45 IST" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homeLoan_request_shouldReturnResult status=SUCCESS method=LoanTests.homeLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:45 IST" name="setUp" finished-at="2025-09-07T21:33:52 IST" duration-ms="7183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:52 IST" name="personalLoan_request_shouldReturnResult" finished-at="2025-09-07T21:33:59 IST" duration-ms="6486" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- personalLoan_request_shouldReturnResult -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619]" started-at="2025-09-07T21:33:59 IST" name="tearDown" finished-at="2025-09-07T21:34:00 IST" duration-ms="1136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=personalLoan_request_shouldReturnResult status=SUCCESS method=LoanTests.personalLoan_request_shouldReturnResult()[pri:0, instance:com.capstone.bank.tests.LoanTests@3de8f619] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.LoanTests -->
+    </test> <!-- Loan -->
+    <test started-at="2025-09-07T21:33:49 IST" name="Transfer" finished-at="2025-09-07T21:34:04 IST" duration-ms="14608">
+      <class name="com.capstone.bank.tests.FundTransferTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.FundTransferTests@790da477]" started-at="2025-09-07T21:33:49 IST" name="setUp" finished-at="2025-09-07T21:33:55 IST" duration-ms="5487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@790da477]" started-at="2025-09-07T21:33:55 IST" name="transferFunds_shouldShowResultPage" finished-at="2025-09-07T21:34:03 IST" duration-ms="8450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferFunds_shouldShowResultPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.FundTransferTests@790da477]" started-at="2025-09-07T21:34:03 IST" name="tearDown" finished-at="2025-09-07T21:34:04 IST" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transferFunds_shouldShowResultPage status=SUCCESS method=FundTransferTests.transferFunds_shouldShowResultPage()[pri:0, instance:com.capstone.bank.tests.FundTransferTests@790da477] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.FundTransferTests -->
+    </test> <!-- Transfer -->
+    <test started-at="2025-09-07T21:34:00 IST" name="History" finished-at="2025-09-07T21:34:13 IST" duration-ms="13474">
+      <class name="com.capstone.bank.tests.TransactionHistoryTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@5e7cd6cc]" started-at="2025-09-07T21:34:00 IST" name="setUp" finished-at="2025-09-07T21:34:03 IST" duration-ms="3327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTransfer()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@5e7cd6cc]" started-at="2025-09-07T21:34:03 IST" name="transactions_shouldAppearAfterTransfer" finished-at="2025-09-07T21:34:12 IST" duration-ms="9390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transactions_shouldAppearAfterTransfer -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@5e7cd6cc]" started-at="2025-09-07T21:34:12 IST" name="tearDown" finished-at="2025-09-07T21:34:13 IST" duration-ms="751" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transactions_shouldAppearAfterTransfer status=SUCCESS method=TransactionHistoryTests.transactions_shouldAppearAfterTransfer()[pri:0, instance:com.capstone.bank.tests.TransactionHistoryTests@5e7cd6cc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.capstone.bank.tests.TransactionHistoryTests -->
+    </test> <!-- History -->
+  </suite> <!-- BankingAutomationSuite -->
+</testng-results>

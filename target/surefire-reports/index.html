@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-BankingAutomationSuite" class="navigator-link">
+              <span class="suite-name border-passed">BankingAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-BankingAutomationSuite" class="navigator-link ">
+                    <span>C:\Users\sivap\Downloads\banking-automation-fixed\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-BankingAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-BankingAutomationSuite" class="navigator-link ">
+                    <span>5 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-BankingAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-BankingAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-BankingAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-BankingAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="hide-methods passed suite-BankingAutomationSuite"> (hide)</a> <!-- hide-methods passed suite-BankingAutomationSuite -->
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="show-methods passed suite-BankingAutomationSuite"> (show)</a> <!-- show-methods passed suite-BankingAutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BankingAutomationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoanTests" class="method navigator-link" hash-for-method="homeLoan_request_shouldReturnResult">homeLoan_request_shouldReturnResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoginTests" class="method navigator-link" hash-for-method="invalidLogin">invalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoanTests" class="method navigator-link" hash-for-method="personalLoan_request_shouldReturnResult">personalLoan_request_shouldReturnResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.TransactionHistoryTests" class="method navigator-link" hash-for-method="transactions_shouldAppearAfterTransfer">transactions_shouldAppearAfterTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.FundTransferTests" class="method navigator-link" hash-for-method="transferFunds_shouldShowResultPage">transferFunds_shouldShowResultPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoginTests" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(150000.0, 9.5, 240)">validateEmi(150000.0, 9.5, 240)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(20000.0, 10.5, 48)">validateEmi(20000.0, 10.5, 48)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(12000.0, 13.0, 24)">validateEmi(12000.0, 13.0, 24)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(5000.0, 12.0, 12)">validateEmi(5000.0, 12.0, 12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BankingAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BankingAutomationSuite" class="panel BankingAutomationSuite">
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.FundTransferTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="transferFunds_shouldShowResultPage">
+                  </a> <!-- transferFunds_shouldShowResultPage -->
+                  <span class="method-name">transferFunds_shouldShowResultPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.TransactionHistoryTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="transactions_shouldAppearAfterTransfer">
+                  </a> <!-- transactions_shouldAppearAfterTransfer -->
+                  <span class="method-name">transactions_shouldAppearAfterTransfer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.EmiTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(150000.0, 9.5, 240)">
+                  </a> <!-- validateEmi(150000.0, 9.5, 240) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(150000.0,9.5,240)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(20000.0, 10.5, 48)">
+                  </a> <!-- validateEmi(20000.0, 10.5, 48) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(20000.0,10.5,48)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(12000.0, 13.0, 24)">
+                  </a> <!-- validateEmi(12000.0, 13.0, 24) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(12000.0,13.0,24)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(5000.0, 12.0, 12)">
+                  </a> <!-- validateEmi(5000.0, 12.0, 12) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(5000.0,12.0,12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.LoanTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoan_request_shouldReturnResult">
+                  </a> <!-- homeLoan_request_shouldReturnResult -->
+                  <span class="method-name">homeLoan_request_shouldReturnResult</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalLoan_request_shouldReturnResult">
+                  </a> <!-- personalLoan_request_shouldReturnResult -->
+                  <span class="method-name">personalLoan_request_shouldReturnResult</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin">
+                  </a> <!-- invalidLogin -->
+                  <span class="method-name">invalidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+        </div> <!-- panel BankingAutomationSuite -->
+        <div panel-name="test-xml-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sivap\Downloads\banking-automation-fixed\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;BankingAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Login&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Loan&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.LoanTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Loan --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;EMI&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.EmiTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EMI --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Transfer&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.FundTransferTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Transfer --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;History&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.TransactionHistoryTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- History --&gt;
+&lt;/suite&gt; &lt;!-- BankingAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Loan (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EMI (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Transfer (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">History (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">emi</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateEmi</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">history</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">transactions_shouldAppearAfterTransfer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">loan</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">homeLoan_request_shouldReturnResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">personalLoan_request_shouldReturnResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">transfer</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">transferFunds_shouldShowResultPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BankingAutomationSuite');
+function tableData_BankingAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'transactions_shouldAppearAfterTransfer')
+data.setCell(0, 2, 'com.capstone.bank.tests.TransactionHistoryTests')
+data.setCell(0, 3, 9390);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'homeLoan_request_shouldReturnResult')
+data.setCell(1, 2, 'com.capstone.bank.tests.LoanTests')
+data.setCell(1, 3, 8533);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'transferFunds_shouldShowResultPage')
+data.setCell(2, 2, 'com.capstone.bank.tests.FundTransferTests')
+data.setCell(2, 3, 8450);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'personalLoan_request_shouldReturnResult')
+data.setCell(3, 2, 'com.capstone.bank.tests.LoanTests')
+data.setCell(3, 3, 6486);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validLogin')
+data.setCell(4, 2, 'com.capstone.bank.tests.LoginTests')
+data.setCell(4, 3, 3132);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invalidLogin')
+data.setCell(5, 2, 'com.capstone.bank.tests.LoginTests')
+data.setCell(5, 3, 2111);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateEmi')
+data.setCell(6, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(6, 3, 25);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateEmi')
+data.setCell(7, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateEmi')
+data.setCell(8, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateEmi')
+data.setCell(9, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(9, 3, 1);
+window.suiteTableData['BankingAutomationSuite']= { tableData: data, tableDiv: 'times-div-BankingAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <div id="times-div-BankingAutomationSuite">
+              </div> <!-- times-div-BankingAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoginTests.invalidLogin())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin</span>
+                <span class="method-start">14660 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(5000.0, 12.0, 12)</span>
+                <span class="method-start">15021 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">15052 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">homeLoan_request_shouldReturnResult</span>
+                <span class="method-start">15517 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLogin status=SUCCESS method=LoginTests.invalidLogin()[pri:0, instance:com.ca...)</span>
+                <span class="method-start">16782 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">17403 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoginTests.validLogin())</span>
+                <span class="method-start">18023 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=homeLoan_request_shouldReturnResult status=SUCCESS method=LoanTests.homeLoan_reques...)</span>
+                <span class="method-start">24053 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(150000.0, 9.5, 240)</span>
+                <span class="method-start">24672 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">24676 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">25304 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">25453 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult())</span>
+                <span class="method-start">25461 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLogin status=SUCCESS method=LoginTests.validLogin()[pri:0, instance:com.capsto...)</span>
+                <span class="method-start">28437 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage())</span>
+                <span class="method-start">29743 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(20000.0, 10.5, 48)</span>
+                <span class="method-start">31958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">31961 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">personalLoan_request_shouldReturnResult</span>
+                <span class="method-start">32644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">33129 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">transferFunds_shouldShowResultPage</span>
+                <span class="method-start">35230 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(12000.0, 13.0, 24)</span>
+                <span class="method-start">38481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">38487 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=personalLoan_request_shouldReturnResult status=SUCCESS method=LoanTests.personalLoa...)</span>
+                <span class="method-start">39130 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.TransactionHistoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTr...)</span>
+                <span class="method-start">39964 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">transactions_shouldAppearAfterTransfer</span>
+                <span class="method-start">43292 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=transferFunds_shouldShowResultPage status=SUCCESS method=FundTransferTests.transfer...)</span>
+                <span class="method-start">43682 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.TransactionHistoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=transactions_shouldAppearAfterTransfer status=SUCCESS method=TransactionHistoryTest...)</span>
+                <span class="method-start">52683 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

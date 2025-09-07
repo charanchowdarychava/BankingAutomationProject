@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [BankingAutomationSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="3" parallel="tests" name="History(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.capstone.bank.tests.TransactionHistoryTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="transactions_shouldAppearAfterTransfer"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.capstone.bank.tests.TransactionHistoryTests -->
+    </classes>
+  </test> <!-- History(failed) -->
+</suite> <!-- Failed suite [BankingAutomationSuite] -->

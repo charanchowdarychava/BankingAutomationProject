@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-BankingAutomationSuite" class="navigator-link">
+              <span class="suite-name border-failed">BankingAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-BankingAutomationSuite" class="navigator-link ">
+                    <span>C:\Users\sivap\Downloads\banking-automation-fixed\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-BankingAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">5 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-BankingAutomationSuite" class="navigator-link ">
+                    <span>5 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-BankingAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-BankingAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-BankingAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-BankingAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 4 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="hide-methods failed suite-BankingAutomationSuite"> (hide)</a> <!-- hide-methods failed suite-BankingAutomationSuite -->
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="show-methods failed suite-BankingAutomationSuite"> (show)</a> <!-- show-methods failed suite-BankingAutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-BankingAutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoanTests" class="method navigator-link" hash-for-method="homeLoan_request_shouldReturnResult">homeLoan_request_shouldReturnResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoanTests" class="method navigator-link" hash-for-method="personalLoan_request_shouldReturnResult">personalLoan_request_shouldReturnResult</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.TransactionHistoryTests" class="method navigator-link" hash-for-method="transactions_shouldAppearAfterTransfer">transactions_shouldAppearAfterTransfer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.FundTransferTests" class="method navigator-link" hash-for-method="transferFunds_shouldShowResultPage">transferFunds_shouldShowResultPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BankingAutomationSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="hide-methods passed suite-BankingAutomationSuite"> (hide)</a> <!-- hide-methods passed suite-BankingAutomationSuite -->
+                      <a href="#" panel-name="suite-BankingAutomationSuite" class="show-methods passed suite-BankingAutomationSuite"> (show)</a> <!-- show-methods passed suite-BankingAutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BankingAutomationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoginTests" class="method navigator-link" hash-for-method="invalidLogin">invalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.LoginTests" class="method navigator-link" hash-for-method="validLogin">validLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(150000.0, 9.5, 240)">validateEmi(150000.0, 9.5, 240)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(5000.0, 12.0, 12)">validateEmi(5000.0, 12.0, 12)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(20000.0, 10.5, 48)">validateEmi(20000.0, 10.5, 48)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-BankingAutomationSuite" title="com.capstone.bank.tests.EmiTests" class="method navigator-link" hash-for-method="validateEmi(12000.0, 13.0, 24)">validateEmi(12000.0, 13.0, 24)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BankingAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BankingAutomationSuite" class="panel BankingAutomationSuite">
+          <div class="suite-BankingAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.capstone.bank.tests.FundTransferTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="transferFunds_shouldShowResultPage">
+                  </a> <!-- transferFunds_shouldShowResultPage -->
+                  <span class="method-name">transferFunds_shouldShowResultPage</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#accountTable tbody tr td a&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b023ef2b9f561b0d6b4c51719d61719, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61175/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8b023ef2b9f561b0d6b4c51719d61719
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage(FundTransferTests.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-failed -->
+          <div class="suite-BankingAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.capstone.bank.tests.TransactionHistoryTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="transactions_shouldAppearAfterTransfer">
+                  </a> <!-- transactions_shouldAppearAfterTransfer -->
+                  <span class="method-name">transactions_shouldAppearAfterTransfer</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#accountTable tbody tr td a&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [16322af2deb24d8a4ae2d10866704629, findElement {value=#accountTable tbody tr td a, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61176/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 16322af2deb24d8a4ae2d10866704629
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTransfer(TransactionHistoryTests.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-failed -->
+          <div class="suite-BankingAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.capstone.bank.tests.LoanTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="homeLoan_request_shouldReturnResult">
+                  </a> <!-- homeLoan_request_shouldReturnResult -->
+                  <span class="method-name">homeLoan_request_shouldReturnResult</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[type=&apos;submit&apos;][value=&apos;Apply Now&apos;]&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25a9861357adc193f36a4a8e56a56a57, findElement {value=input[type=&apos;submit&apos;][value=&apos;Apply Now&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60964}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60964/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 25a9861357adc193f36a4a8e56a56a57
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.capstone.bank.pages.LoanPage.requestLoan(LoanPage.java:25)
+	at com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult(LoanTests.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="personalLoan_request_shouldReturnResult">
+                  </a> <!-- personalLoan_request_shouldReturnResult -->
+                  <span class="method-name">personalLoan_request_shouldReturnResult</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;input[type=&apos;submit&apos;][value=&apos;Apply Now&apos;]&quot;}
+  (Session info: chrome=139.0.7258.155)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d0d155ce7b35fad71417786df6aeed3b, findElement {value=input[type=&apos;submit&apos;][value=&apos;Apply Now&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.155, chrome: {chromedriverVersion: 139.0.7258.154 (9e0d6b2b47f..., userDataDir: C:\Users\sivap\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61055/devtoo..., se:cdpVersion: 139.0.7258.155, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d0d155ce7b35fad71417786df6aeed3b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at com.capstone.bank.pages.LoanPage.requestLoan(LoanPage.java:25)
+	at com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult(LoanTests.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-failed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.EmiTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(150000.0, 9.5, 240)">
+                  </a> <!-- validateEmi(150000.0, 9.5, 240) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(150000.0,9.5,240)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(5000.0, 12.0, 12)">
+                  </a> <!-- validateEmi(5000.0, 12.0, 12) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(5000.0,12.0,12)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(20000.0, 10.5, 48)">
+                  </a> <!-- validateEmi(20000.0, 10.5, 48) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(20000.0,10.5,48)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateEmi(12000.0, 13.0, 24)">
+                  </a> <!-- validateEmi(12000.0, 13.0, 24) -->
+                  <span class="method-name">validateEmi</span>
+                  <span class="parameters">(12000.0,13.0,24)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+          <div class="suite-BankingAutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.capstone.bank.tests.LoginTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidLogin">
+                  </a> <!-- invalidLogin -->
+                  <span class="method-name">invalidLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validLogin">
+                  </a> <!-- validLogin -->
+                  <span class="method-name">validLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BankingAutomationSuite-class-passed -->
+        </div> <!-- panel BankingAutomationSuite -->
+        <div panel-name="test-xml-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sivap\Downloads\banking-automation-fixed\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;BankingAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Login&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.LoginTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Loan&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.LoanTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Loan --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;EMI&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.EmiTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- EMI --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Transfer&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.FundTransferTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Transfer --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;History&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.capstone.bank.tests.TransactionHistoryTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- History --&gt;
+&lt;/suite&gt; &lt;!-- BankingAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Login (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Loan (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">EMI (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Transfer (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">History (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">emi</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">validateEmi</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">history</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">transactions_shouldAppearAfterTransfer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">loan</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">homeLoan_request_shouldReturnResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">personalLoan_request_shouldReturnResult</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">login</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">transfer</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">transferFunds_shouldShowResultPage</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BankingAutomationSuite');
+function tableData_BankingAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'personalLoan_request_shouldReturnResult')
+data.setCell(0, 2, 'com.capstone.bank.tests.LoanTests')
+data.setCell(0, 3, 4236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'homeLoan_request_shouldReturnResult')
+data.setCell(1, 2, 'com.capstone.bank.tests.LoanTests')
+data.setCell(1, 3, 3360);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidLogin')
+data.setCell(2, 2, 'com.capstone.bank.tests.LoginTests')
+data.setCell(2, 3, 2152);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validLogin')
+data.setCell(3, 2, 'com.capstone.bank.tests.LoginTests')
+data.setCell(3, 3, 2148);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'transferFunds_shouldShowResultPage')
+data.setCell(4, 2, 'com.capstone.bank.tests.FundTransferTests')
+data.setCell(4, 3, 1770);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'transactions_shouldAppearAfterTransfer')
+data.setCell(5, 2, 'com.capstone.bank.tests.TransactionHistoryTests')
+data.setCell(5, 3, 1654);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateEmi')
+data.setCell(6, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(6, 3, 74);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateEmi')
+data.setCell(7, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(7, 3, 31);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateEmi')
+data.setCell(8, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(8, 3, 17);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateEmi')
+data.setCell(9, 2, 'com.capstone.bank.tests.EmiTests')
+data.setCell(9, 3, 1);
+window.suiteTableData['BankingAutomationSuite']= { tableData: data, tableDiv: 'times-div-BankingAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
+              <div id="times-div-BankingAutomationSuite">
+              </div> <!-- times-div-BankingAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BankingAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BankingAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoginTests.invalidLogin())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoanTests.homeLoan_request_shouldReturnResult())</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(5000.0, 12.0, 12)</span>
+                <span class="method-start">7200 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">7235 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">homeLoan_request_shouldReturnResult</span>
+                <span class="method-start">7650 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">8211 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">invalidLogin</span>
+                <span class="method-start">10858 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=homeLoan_request_shouldReturnResult status=FAILURE method=LoanTests.homeLoan_reques...)</span>
+                <span class="method-start">11020 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoanTests.personalLoan_request_shouldReturnResult())</span>
+                <span class="method-start">11518 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(150000.0, 9.5, 240)</span>
+                <span class="method-start">12197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">12286 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=invalidLogin status=SUCCESS method=LoginTests.invalidLogin()[pri:0, instance:com.ca...)</span>
+                <span class="method-start">13015 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">13784 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.LoginTests.validLogin())</span>
+                <span class="method-start">13789 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">personalLoan_request_shouldReturnResult</span>
+                <span class="method-start">16158 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(20000.0, 10.5, 48)</span>
+                <span class="method-start">18193 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">18202 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.EmiTests.validateEmi(double,double,int))</span>
+                <span class="method-start">18552 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validLogin</span>
+                <span class="method-start">18607 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoanTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=personalLoan_request_shouldReturnResult status=FAILURE method=LoanTests.personalLoa...)</span>
+                <span class="method-start">20397 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.LoginTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validLogin status=SUCCESS method=LoginTests.validLogin()[pri:0, instance:com.capsto...)</span>
+                <span class="method-start">20757 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.FundTransferTests.transferFunds_shouldShowResultPage())</span>
+                <span class="method-start">21043 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.TransactionHistoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome, public void com.capstone.bank.tests.TransactionHistoryTests.transactions_shouldAppearAfterTr...)</span>
+                <span class="method-start">21240 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.EmiTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateEmi(12000.0, 13.0, 24)</span>
+                <span class="method-start">22676 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateEmi status=SUCCESS method=EmiTests.validateEmi(double,double,int)[pri:0, in...)</span>
+                <span class="method-start">22767 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.TransactionHistoryTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">transactions_shouldAppearAfterTransfer</span>
+                <span class="method-start">28016 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">transferFunds_shouldShowResultPage</span>
+                <span class="method-start">29505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.TransactionHistoryTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=transactions_shouldAppearAfterTransfer status=FAILURE method=TransactionHistoryTest...)</span>
+                <span class="method-start">29678 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.capstone.bank.tests.FundTransferTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=transferFunds_shouldShowResultPage status=FAILURE method=FundTransferTests.transfer...)</span>
+                <span class="method-start">31275 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
